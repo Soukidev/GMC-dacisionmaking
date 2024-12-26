@@ -105,4 +105,27 @@ console.log(power(5, 0));
 
 
 
+// program to check if the string is palindrome or not
+
+function isPali(str){
+    const freeStr = str;
+    
+    let left=0
+    let right = freeStr.length - 1
+    
+    while(left < right){
+        if(freeStr[left] !== freeStr[right] ){
+            return false
+        }
+        left++
+        right--
+    }
+    return true
+}
+ 
+console.log(isPali("name"))
+console.log(isPali("madam"))
+
+
+
 
