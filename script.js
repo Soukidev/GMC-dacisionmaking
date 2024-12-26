@@ -75,4 +75,34 @@ console.log(weatherClothingAdviser(25, true));
 console.log(weatherClothingAdviser(5, false));  
 
 
+// function fibonacci
+
+function fibonacci(n) {
+    if (n <= 0) 
+        return 0; 
+    if (n === 1) 
+        return 1; 
+
+    return fibonacci(n - 1) + fibonacci(n - 2); 
+}
+
+
+console.log(fibonacci(6)); 
+
+// power function
+
+function power(base, exponent) {
+    if (exponent === 0) return 1; 
+    if (exponent === 1) return base; 
+
+    return base * power(base, exponent - 1); 
+}
+
+
+console.log(power(2, 3));
+console.log(power(5, 0)); 
+
+
+
+
 
