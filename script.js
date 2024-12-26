@@ -1,20 +1,14 @@
 function isLeapYear(year) {
-    if (
-        year % 100 === 0 ? year % 400 === 0 : year % 4 === 0
-    )
-        console.log(" Input year:", year, "is a Leap Year");
-    else
-        console.log(
-            " Input year:",
-            year,
-            "is NOT a Leap Year"
-        );
+    if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
+        return true; 
+    } else {
+        return false;
+    }
 }
 
-let inputYear = 2020;
-isLeapYear(inputYear);
-inputYear = 2024;
-isLeapYear(inputYear);
+console.log(isLeapYear(2021)); 
+console.log(isLeapYear(2024)); 
+
 
 // Ticket Pricing 
 
