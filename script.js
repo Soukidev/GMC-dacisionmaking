@@ -105,7 +105,7 @@ console.log(power(5, 0));
 
 
 
-// program to check if the string is palindrome or not
+//  palindrome 
 
 function isPali(str){
     const freeStr = str;
@@ -125,7 +125,6 @@ function isPali(str){
  
 console.log(isPali("name"))
 console.log(isPali("madam"))
-
 
 
 
