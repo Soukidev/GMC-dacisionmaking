@@ -49,6 +49,30 @@ for (var i = 0; i < ages.length; i++) {
 }
 
 
+//weather clithing
+
+function weatherClothingAdviser(temperature, isRaining) {
+    let clothingRecommendation;
+
+    if (temperature < 10) {
+        clothingRecommendation = "It's quite cold. Wear a warm coat, scarf, and gloves.";
+    } else if (temperature >= 10 && temperature < 20) {
+        clothingRecommendation = "The weather is cool. Wear a jacket or sweater.";
+    } else if (temperature >= 20 && temperature < 30) {
+        clothingRecommendation = "The weather is mild. Wear a t-shirt and jeans.";
+    } else {
+        clothingRecommendation = "It's hot outside! Wear light clothing";
+    }
+
+    if (isRaining) {
+        clothingRecommendation += " Don't forget to carry an umbrella or wear a raincoat.";
+    }
+
+    return clothingRecommendation;
+}
+
+console.log(weatherClothingAdviser(25, true));  
+console.log(weatherClothingAdviser(5, false));  
 
 
 
