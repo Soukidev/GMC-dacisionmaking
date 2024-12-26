@@ -12,18 +12,21 @@ console.log(isLeapYear(2024));
 
 // Ticket Pricing 
 
-var age = 25;  
-var ticketPrice;
-
-if (age <= 12) {
-  ticketPrice = 10;
-} else if (age >= 13 && age <= 17) {
-  ticketPrice = 15; 
-} else if (age >= 18) {
-  ticketPrice = 20; 
+function getTicketPrice(age) {
+    if (age <= 12) {
+        return 10; 
+    } else if (age >= 13 && age <= 17) {
+        return 15; 
+    } else {
+        return 20; 
+    }
 }
 
-console.log("Ticket Price: $" + ticketPrice);
+
+console.log(getTicketPrice(10)); 
+console.log(getTicketPrice(15)); 
+console.log(getTicketPrice(30)); 
+
 
 // Ticket Pricing 2
 
